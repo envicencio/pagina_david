@@ -1,0 +1,65 @@
+$tipoFuente: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+$tamanoFuenteParrafo: 18px;
+$colorParrafo: black;
+
+
+$fuenteTitulo: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+$tamanoTitulo: 32px;
+$colorTitulo: black;
+
+$margenSuperior: 100px;
+$margenInferior: 100px;
+$margenIzquierdo: 50px;
+$margenDerecho: 50px;
+
+
+%grupoTitulo{
+    font-weight:800;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:black;
+    font-size: 60px;
+    text-align: center;
+
+}
+
+.uniformes{
+    background: rgb(42,247,31);
+    background: radial-gradient(circle, rgba(42,247,31,1) 0%, rgba(15,224,89,1) 52%, rgba(40,198,106,1) 100%);  
+}
+
+.tituloPagina{
+    @extend %grupoTitulo;
+    background: rgb(42,247,31);
+    background: radial-gradient(circle, rgba(42,247,31,1) 0%, rgba(15,224,89,1) 52%, rgba(40,198,106,1) 100%);
+}
+
+.solicitud{
+    margin-top: $margenSuperior;
+    margin-bottom: $margenInferior;
+    margin-left: $margenIzquierdo;
+    margin-right: $margenDerecho;
+
+    .solicitud__titulo{
+       font-size: $tamanoTitulo;
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       color:$colorTitulo
+    }
+
+    .solicitud__parrafo{
+        font-family: $tipoFuente;
+        font-size: $tamanoFuenteParrafo;
+        color: $colorParrafo;
+        text-align: justify;
+    }
+}
+
+.botonSolicitud{
+    margin-top: $margenSuperior;
+    margin-bottom: $margenInferior;
+    margin-left: $margenIzquierdo;
+    margin-right: $margenDerecho;
+
+    .botonSolicitud__texto{
+        color: $colorParrafo;
+    }
+}

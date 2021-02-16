@@ -1,0 +1,118 @@
+<html>
+<head>
+    <title></title>
+    <Link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<meta name="viewport" content="width=1080px, initial-scale=1">
+</head>
+    
+<body>
+    <header>
+
+        <div class="contenedor">
+            
+        <p>Solicita tu Uniforme</p>
+
+        
+
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Menu</button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="../Index.html">Pagina Principal</a>
+                          <a class="dropdown-item" href="./Seguro.html">Seguro</a>
+                          <a class="dropdown-item" href="#">Link 3</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <br>
+
+    </header>
+
+    <main>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+
+                    <form>
+                        <!-- <fieldset> -->
+                        <!--     <legend>Hola!!, ayúdanos con tus datos</legend> -->
+                            <label for="texto"> Nombre y Apellido: </label>
+                            <input type="text" name="texto">
+                            <br>
+                            <label for="pass"> Contraseña: </label>
+                            <input type="password" name="pass">
+                            <br>
+                            <label for="email"> Email: </label>
+                            <input type="email" name="email">
+                            <br>
+                            <label for="comentarios"> Observaciones </label>
+                            <textarea name=comentarios> </textarea>
+                            <br>
+
+                            <a href="#" title="Hola" data-toggle="popover" data-placement="top" data-content="Yo no hago nada"><input type="button" name="sinAccion" value="No tiene accion"></a>
+                            
+                            <!--script para que funcione el popover-->
+                            <script>
+                            $(document).ready(function(){
+                                $('[data-toggle="popover"]').popover();
+                              });
+                              </script>
+
+
+                            <input type="submit" name="enviar" value="Enviar" onclick="javascript:alert('ESTO ES UN JAVASCRIPT')">
+                            <input type="reset" name="reset" value="Borrar todo">
+                            <!-- </fieldset> -->
+                            <div> Hombre </div>
+                            <input type="radio" name="sexo" value="Hombre">
+                             <div> Mujer </div>
+                            <input type="radio" name="sexo" value="Mujer">
+             
+                            <div> Selecciona las prendas que necesitas</div>  
+                         <div>Blusa o Camisa </div>
+                         <input type="checkbox" name="prendas" value="Blusa">
+             
+                         <div>Pantalón </div>
+                         <input type="checkbox" name="prendas" value="Pantalón">
+             
+                         <div> Gillet o Chaleco </div>
+                         <input type="checkbox" name="prendas" value="Gillet">
+             
+                         <br>
+             
+                         <h2> Selecciona tu Talla</h2>
+             
+                         <select name="Talles">
+                            <option value="L"> Large </option>
+                            <option value="M"> Medium </option>
+                            <option value="S"> Small </option>
+                            
+                        </select>
+             
+                     </form>
+
+
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+    </main>
+
+    <footer>
+        
+    
+    </footer>
+</body>
+</html>

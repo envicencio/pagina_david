@@ -1,0 +1,229 @@
+body{
+
+	background: rgb(18,194,130);
+	background: linear-gradient(90deg, rgba(18,194,130,1) 0%, rgba(86,193,28,1) 35%, rgba(36,92,23,1) 100%);
+}
+
+
+/******************************/
+/***Agregando estilo al menu***/
+/******************************/
+
+.menuHeader{
+
+	display: block;
+	width: 750px;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 180px;
+	margin-bottom: 50px;
+	margin-right: 500px;
+}
+.menuHeader ul li {
+	list-style-position: outside;
+	float: left;
+	font-family: 'Calibri';
+	font-size: 20px;
+	color: grey;
+	text-align: center;
+	cursor: pointer;
+	line-height: 14px;
+	height: 56px;
+}
+.menuHeader ul li a {
+	display: block;
+	color: grey;
+	text-decoration: none;
+	height: 56px;
+}
+.menuHeader ul li:hover, .menuHeader ul li:hover a {
+	font-family: 'Calibri';
+	font-size: 30px;
+	color: grey;
+}
+.menuHeader ul li.selected {
+	font-family: 'Calibri';
+	font-size: 14px;
+	color: white;
+	text-align: center;
+	border-bottom: #009947 solid 5px; 
+}
+.menuHeader ul li.selected a {
+	color: white;
+	text-decoration: none;
+}
+.menuHeader ul li.inicio {
+	width: 60px;
+	margin-right: 20px;
+}
+.menuHeader ul li.solicitud {
+	width: 85px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.menuHeader ul li.galeria {
+	width: 80;
+	margin-left: 20px;
+}
+.menuHeader ul li.liquidaciones {
+	width: 110px;
+	margin-left: 35px;
+}
+
+/************************************/
+/**** Agregando Estilo al Titulo ****/
+/************************************/
+
+.tituloIndex{
+	text-align: center;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	color: darkgreen;
+	font-size: 70px;
+}
+
+/************************************/
+/*** Agregando estilos al footer ***/
+/**********************************/
+
+.piePagina{
+	display: block;
+	width: 980px;
+	margin: 175px;
+}
+
+.pieIndex{
+	display: block;
+	background-color:lightgreen;
+	padding: 29px 20px 29px 20px;
+}
+
+.pieIndex .areaContacto {
+	float: left;
+}
+
+.pieIndex .areaContacto h6{
+	display: block;
+	font-family: 'Calibri';
+	font-size: 12px;
+	color: grey;
+}
+
+.piePagina .pieIndex p{
+	font-family: 'Calibri';
+	font-size: 18px;
+	color: grey;
+	padding-bottom: 6px;
+}
+
+.piePagina .pieIndex p.iconoTelefono{
+	display: inline-block;
+	line-height: 10px;
+}
+
+.piePagina .pieIndex .telefono{
+	display: inline-block;
+	font-family: 'Calibri';
+	font-size: 18px;
+	color: grey;
+	line-height: 10px;
+	text-decoration: none;
+	cursor: default;
+}
+
+.contenidoTelefono{
+	display: block;
+}
+
+/****************************************/
+/***** Agregando Estilo al Main**********/
+/****************************************/
+
+.contenidoCentro {
+	margin-top: 50px;
+	margin-left: 50px;
+	margin-bottom: 50px;
+}
+
+.imagen{
+	padding-top: 50px;
+	padding-left: 150px;
+	float: inherit;
+}
+
+.contenidoCentro .textoCentro {
+	margin-top: 50px;
+	margin-left: 150px;
+	margin-right: 150px;
+	margin-bottom: 50px;
+	color: gray;
+	text-align: justify;
+	text-overflow: ellipsis;
+	font-size: 20px;
+}
+
+
+/*****************************/
+/*otros estilos*/
+
+html{
+
+	background-color: lightgreen;
+}
+
+
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+
+}
+
+body{
+	/*
+	width: 500px;
+	height: 500px;
+	align-content: center;
+	*/
+	background-color: lightgreen;
+}
+
+
+.contenedor{
+
+	background-image: linear-gradient(to top, lightgreen, Green);
+	width: 20%x;
+	height: 40%;
+	margin: 10px 10px 20px 10px;
+	padding: 50px;
+	font-size: 100px;
+	font-family: Arial;
+
+
+	border-color: yellow;
+	border-style: outset;
+	border-width: 10px;
+
+	overflow: hidden;
+	/* transform: translateX(80px);*/
+	/* transform: rotateX(45deg);*/
+	/* transform: skew(20deg, 20deg);*/
+
+animation: animacion 5s infinite;
+
+}
+@keyframes animacion{
+
+	from{
+		transform:scale(1);
+	}
+	50%{
+		transform: scale(0.5)
+	}
+	to{
+		transform:scale(1);
+	}
+
+.contenedor:hover{
+		transition: 1s;
+	transform: scale(0.8);
+}

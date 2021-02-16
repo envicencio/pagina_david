@@ -1,0 +1,62 @@
+html{
+
+	background-color: lightgreen;
+}
+
+
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+
+}
+
+body{
+	/*
+	width: 500px;
+	height: 500px;
+	align-content: center;
+	*/
+	background-color: lightgreen;
+}
+
+
+.contenedor{
+
+	background-image: linear-gradient(to top, lightgreen, Green);
+	width: 20%x;
+	height: 40%;
+	margin: 10px 10px 20px 10px;
+	padding: 50px;
+	font-size: 100px;
+	font-family: Arial;
+
+
+	border-color: yellow;
+	border-style: outset;
+	border-width: 10px;
+
+	overflow: hidden;
+	/* transform: translateX(80px);*/
+	/* transform: rotateX(45deg);*/
+	/* transform: skew(20deg, 20deg);*/
+
+animation: animacion 5s infinite;
+
+}
+@keyframes animacion{
+
+	from{
+		transform:scale(1);
+	}
+	50%{
+		transform: scale(0.5)
+	}
+	to{
+		transform:scale(1);
+	}
+
+.contenedor:hover{
+		transition: 1s;
+	transform: scale(0.8);
+}

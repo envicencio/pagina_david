@@ -1,0 +1,96 @@
+html{
+
+	background-color: greenyellow;
+}
+
+*{
+	padding: 0px;
+	margin:0px;
+	box-sizing: border-box;
+}
+
+
+.padre{
+	
+	height: 600px;
+
+	background-color: lightgreen;
+	border:solid 1px blue;
+
+	display: grid;
+
+	grid-template-rows:   100px 100px 100px;
+	grid-template-columns:200px 200px 200px;
+
+	grid-template-areas: "pos1 pos1 pos2"
+						 "pos1 pos1 pos2"
+						 "pos3 pos4 pos4";
+
+	grid-row-gap: 5px;
+
+	/*width: 1000px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+
+	justify-items:center;*/
+
+
+	justify-content: flex-start;
+
+
+	align-content: center;
+
+}
+
+.hijo1, .hijo2, .hijo3, .hijo4 {
+	color: Black;
+	border: solid 4px black;
+/*width: 300px;*/
+
+height: 180px;
+
+}
+
+.hijo1{
+	background-color: gold;
+	font-size: 25px;
+	font-family: calibri;
+	text-align: center;
+
+	grid-area: pos1;
+}
+
+.hijo2{
+	background-color: lawngreen ;
+	font-size: 25px;
+	font-family: calibri;
+	text-align: center;
+
+	grid-area: pos2;
+}
+
+.hijo3{
+	background-color: khaki;
+	font-size: 15px;
+	font-family: calibri;
+	text-align: center;*/
+
+	grid-area: pos3;
+}
+
+.hijo4{
+	background-color: yellowgreen;
+	font-size: 25px;
+	font-family: calibri;
+	text-align: center;
+
+	grid-area: pos4;
+}
+
+
+
+
+
+
+
